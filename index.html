@@ -8000,28 +8000,35 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <form action="correo/envioCorreo.php" method="post" class="wpcf7-form">
+                                                                        <script language="JavaScript">
+                                                                            function Enviar(){
+                                                                                   document.gform.submit()
+                                                                                   document.getElementById("gform").reset();
+                                                                            }
+                                                                            </script>
+                                                                            
+                                                                        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSddDKmxNnEuc63eWZdqkGAJT6My4wsvCEbIaR6diOO0TSEkbg/formResponse?" target="hidden_iframe" onSubmit="submitted=true;">
                                                                             <div class="elementor-element elementor-element-153rk87 elementor-widget elementor-widget-contact-form-7" data-id="153rk87" data-element_type="widget" data-widget_type="contact-form-7.default">
                                                                                 <div class="elementor-widget-container">
                                                                                     <div class="elementor-contact-form-7 jet-elements">
                                                                                         <div role="form" class="wpcf7" id="wpcf7-f3086-p278-o1" lang="en-US" dir="ltr">
                                                                                             <div class="screen-reader-response"></div>
 
-                                                                                            <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nombre:" /></span></p>
-                                                                                            <p><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Telefono:" /></span></p>
-                                                                                            <p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Correo electrónico" /></span></p>
+                                                                                            <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="entry.1611304426" id="entry.1611304426" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nombre:" /></span></p>
+                                                                                            <p><span class="wpcf7-form-control-wrap your-phone"><input type="text" name="entry.630904389" id="entry.630904389" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Telefono:" /></span></p>
+                                                                                            <p><span class="wpcf7-form-control-wrap your-email"><input type="text" name="entry.2117082949" id="entry.2117082949" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Correo electrónico" /></span></p>
 
-                                                                                            <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Comentario"></textarea></span></p>
-                                                                                            <p><input type="submit" style="background:#FF9000" value="Enviar" class="wpcf7-form-control wpcf7-submit btn-accent-2" /></p>
+                                                                                            <p><span class="wpcf7-form-control-wrap your-message"><textarea name="entry.2038157649" id="entry.2038157649" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Comentario"></textarea></span></p>
+                                                                                            <p><input type="button" style="background:#FF9000" onclick="Enviar()" value="Enviar" class="wpcf7-form-control wpcf7-submit btn-accent-2" /></p>
                                                                                             <div class="wpcf7-response-output wpcf7-display-none"></div>
-
-
+                                                                                            
                                                                                         </div>
 
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </form>
+                                                                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                                                                     </div>
                                                                 </div>
                                                             </div>
