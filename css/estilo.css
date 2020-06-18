@@ -1,0 +1,39 @@
+
+form{
+    background: #03ABFF;
+    width: 100%;
+    /* margin: 20px; */
+    padding: 20px;
+}
+textarea{
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+input, textarea{
+    background-color: #ffffff;
+    color: #969ba2;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #1668c4;  
+}
+
+input[type="button"]{
+    margin-bottom: 0px;
+    background: #FF9000;
+    color: #fff;
+    border: none;
+}
+
+input[type="button"]:hover{
+    background: #f0af59;
+    cursor: pointer;
+}
