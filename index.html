@@ -1,231 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- <?php
-if (!empty($_GET) && $_GET['correo'] == 1) {
-    echo "<script>alert('Correo enviado con exito')</script>";
-}
-?> -->
-<!-- Mirrored from ld-wp.template-help.com/wordpress_62555/4/default/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 May 2020 15:50:42 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168608120-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<head>
-    <meta charset="UTF-8">
-    <script src="../../../cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-    <link rel="pingback" href="xmlrpc.php">
+  gtag('config', 'UA-168608120-1');
+</script>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Nubex ST</title>
-    <style type="text/css" media="screen">
-        #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active,
-        #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active:hover,
-        body #booked-profile-page input[type=submit].button-primary:hover,
-        body .booked-list-view button.button:hover,
-        body .booked-list-view input[type=submit].button-primary:hover,
-        body table.booked-calendar input[type=submit].button-primary:hover,
-        body .booked-modal input[type=submit].button-primary:hover,
-        body table.booked-calendar th,
-        body table.booked-calendar thead,
-        body table.booked-calendar thead th,
-        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
-        body #booked-profile-page .booked-profile-header,
-        body #booked-profile-page .booked-tabs li.active a,
-        body #booked-profile-page .booked-tabs li.active a:hover,
-        body #booked-profile-page .appt-block .google-cal-button>a:hover,
-        #ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header {
-            background: #c4f2d4 !important;
-        }
-
-        body #booked-profile-page input[type=submit].button-primary:hover,
-        body table.booked-calendar input[type=submit].button-primary:hover,
-        body .booked-list-view button.button:hover,
-        body .booked-list-view input[type=submit].button-primary:hover,
-        body .booked-modal input[type=submit].button-primary:hover,
-        body table.booked-calendar th,
-        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
-        body #booked-profile-page .booked-profile-header,
-        body #booked-profile-page .appt-block .google-cal-button>a:hover {
-            border-color: #c4f2d4 !important;
-        }
-
-        body table.booked-calendar tr.days,
-        body table.booked-calendar tr.days th,
-        body .booked-calendarSwitcher.calendar,
-        body #booked-profile-page .booked-tabs,
-        #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead,
-        #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead th {
-            background: #039146 !important;
-        }
-
-        body table.booked-calendar tr.days th,
-        body #booked-profile-page .booked-tabs {
-            border-color: #039146 !important;
-        }
-
-        #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a,
-        #ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a:hover,
-        body #booked-profile-page input[type=submit].button-primary,
-        body table.booked-calendar input[type=submit].button-primary,
-        body .booked-list-view button.button,
-        body .booked-list-view input[type=submit].button-primary,
-        body .booked-list-view button.button,
-        body .booked-list-view input[type=submit].button-primary,
-        body .booked-modal input[type=submit].button-primary,
-        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
-        body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block,
-        body #booked-profile-page .appt-block .google-cal-button>a,
-        body .booked-modal p.booked-title-bar,
-        body table.booked-calendar td:hover .date span,
-        body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
-        body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover,
-        .booked-ms-modal .booked-book-appt
-
-        /* Multi-Slot Booking */
-            {
-            background: #56c477;
-        }
-
-        body #booked-profile-page input[type=submit].button-primary,
-        body table.booked-calendar input[type=submit].button-primary,
-        body .booked-list-view button.button,
-        body .booked-list-view input[type=submit].button-primary,
-        body .booked-list-view button.button,
-        body .booked-list-view input[type=submit].button-primary,
-        body .booked-modal input[type=submit].button-primary,
-        body #booked-profile-page .appt-block .google-cal-button>a,
-        body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
-        body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
-        body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover {
-            border-color: #56c477;
-        }
-
-        body .booked-modal .bm-window p i.fa,
-        body .booked-modal .bm-window a,
-        body .booked-appt-list .booked-public-appointment-title,
-        body .booked-modal .bm-window p.appointment-title,
-        .booked-ms-modal.visible:hover .booked-book-appt {
-            color: #56c477;
-        }
-
-        .booked-appt-list .timeslot.has-title .booked-public-appointment-title {
-            color: inherit;
-        }
-    </style>
-    <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
-    <link rel='dns-prefetch' href='http://s.w.org/' />
-    <link rel="alternate" type="application/rss+xml" title="JohnnyGo &raquo; Feed" href="feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="JohnnyGo &raquo; Comments Feed" href="comments/feed/index.html" />
-    <script type="text/javascript">
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/ld-wp.template-help.com\/wordpress_62555\/4\/default\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"
-            }
-        };
-        ! function(a, b, c) {
-            function d(a, b) {
-                var c = String.fromCharCode;
-                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
-                var d = k.toDataURL();
-                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
-                var e = k.toDataURL();
-                return d === e
-            }
-
-            function e(a) {
-                var b;
-                if (!l || !l.fillText) return !1;
-                switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
-                    case "flag":
-                        return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
-                    case "emoji":
-                        return b = d([55358, 56760, 9792, 65039], [55358, 56760, 8203, 9792, 65039]), !b
-                }
-                return !1
-            }
-
-            function f(a) {
-                var c = b.createElement("script");
-                c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
-            }
-            var g, h, i, j, k = b.createElement("canvas"),
-                l = k.getContext && k.getContext("2d");
-            for (j = Array("flag", "emoji"), c.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
-            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function() {
-                c.DOMReady = !0
-            }, c.supports.everything || (h = function() {
-                c.readyCallback()
-            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function() {
-                "complete" === b.readyState && c.readyCallback()
-            })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
-    <style type="text/css">
-        img.wp-smiley,
-        img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 .07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
+    <!-- Estilo para los elementos del footer -->
     <link rel='stylesheet' id='nucleo-outline-css' href='wp-content/themes/johnnygo/assets/css/nucleo-outline8a54.css?ver=1.0.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='font-awesome-css' href='wp-content/plugins/cherry-socialize/assets/css/font-awesome.min1849.css?ver=4.7.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='cherry-socialize-public-css' href='wp-content/plugins/cherry-socialize/assets/css/publicc358.css?ver=1.1.3' type='text/css' media='all' />
-    <link rel='stylesheet' id='jquery-swiper-css' href='wp-content/plugins/cherry-testi/includes/swiper/css/swiper.minccfb.css?ver=3.4.2' type='text/css' media='all' />
-    <link rel='stylesheet' id='cherry-testi-css' href='wp-content/plugins/cherry-testi/public/assets/css/stylec756.css?ver=1.1.0.5' type='text/css' media='all' />
-    <link rel='stylesheet' id='cherry-trending-posts-css' href='wp-content/plugins/cherry-trending-posts/assets/css/stylef269.css?ver=1.0.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='tm-woocommerce-package-css' href='wp-content/plugins/tm-woocommerce-package/assets/css/tm-woocommerce-package9e1e.css?ver=1.3.2' type='text/css' media='all' />
-    <link rel='stylesheet' id='jquery-rd-material-tabs-css' href='wp-content/plugins/tm-woocommerce-package/assets/css/rd-material-tabs8a54.css?ver=1.0.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='jquery-slider-pro-css' href='wp-content/themes/johnnygo/assets/css/slider-pro.min9030.css?ver=1.2.4' type='text/css' media='all' />
-    <link rel='stylesheet' id='booked-icons-css' href='wp-content/plugins/booked/assets/css/icons53cf.css?ver=2.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='booked-tooltipster-css' href='wp-content/plugins/booked/assets/js/tooltipster/css/tooltipster9b70.css?ver=3.3.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='booked-tooltipster-theme-css' href='wp-content/plugins/booked/assets/js/tooltipster/css/themes/tooltipster-light9b70.css?ver=3.3.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='booked-animations-css' href='wp-content/plugins/booked/assets/css/animations53cf.css?ver=2.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='booked-styles-css' href='wp-content/plugins/booked/assets/css/styles53cf.css?ver=2.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='booked-responsive-css' href='wp-content/plugins/booked/assets/css/responsive53cf.css?ver=2.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='cherry-services-css' href='wp-content/plugins/cherry-services-list/public/assets/css/cherry-services6dbf.css?ver=1.4.7' type='text/css' media='all' />
-    <link rel='stylesheet' id='cherry-services-theme-css' href='wp-content/plugins/cherry-services-list/public/assets/css/cherry-services-theme6dbf.css?ver=1.4.7' type='text/css' media='all' />
-    <link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/stylesce52.css?ver=5.0.2' type='text/css' media='all' />
-    <link rel='stylesheet' id='rs-plugin-settings-css' href='wp-content/plugins/rev-slider/public/assets/css/settingsc225.css?ver=5.4.1' type='text/css' media='all' />
-    <style id='rs-plugin-settings-inline-css' type='text/css'>
-        #rs-demo-id {}
-    </style>
-    <link rel='stylesheet' id='woocommerce-layout-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-layout5589.css?ver=3.4.1' type='text/css' media='all' />
-    <link rel='stylesheet' id='woocommerce-smallscreen-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen5589.css?ver=3.4.1' type='text/css' media='only screen and (max-width: 768px)' />
-    <link rel='stylesheet' id='woocommerce-general-css' href='wp-content/plugins/woocommerce/assets/css/woocommerce5589.css?ver=3.4.1' type='text/css' media='all' />
-    <style id='woocommerce-inline-inline-css' type='text/css'>
-        .woocommerce form .form-row .required {
-            visibility: visible;
-        }
-    </style>
-    <link rel='stylesheet' id='wsl-widget-css' href='wp-content/plugins/wordpress-social-login/assets/css/style5010.css?ver=4.9.8' type='text/css' media='all' />
-    <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min5010.css?ver=4.9.8' type='text/css' media='all' />
+    <!-- <link rel='stylesheet' id='wsl-widget-css' href='wp-content/plugins/wordpress-social-login/assets/css/style5010.css?ver=4.9.8' type='text/css' media='all' />
+     --><!-- <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min5010.css?ver=4.9.8' type='text/css' media='all' />
     <link rel='stylesheet' id='tm-woocompare-css' href='wp-content/plugins/tm-woocommerce-compare-wishlist/assets/css/tm-woocompare5010.css?ver=4.9.8' type='text/css' media='all' />
     <link rel='stylesheet' id='tm-woowishlist-css' href='wp-content/plugins/tm-woocommerce-compare-wishlist/assets/css/tm-woowishlist5010.css?ver=4.9.8' type='text/css' media='all' />
-    <link rel='stylesheet' id='tm-timeline-css-css' href='wp-content/plugins/tm-timeline/css/tm-timelinec64e.css?ver=1.1.1' type='text/css' media='all' />
+     --><!-- <link rel='stylesheet' id='tm-timeline-css-css' href='wp-content/plugins/tm-timeline/css/tm-timelinec64e.css?ver=1.1.1' type='text/css' media='all' />
     <link rel='stylesheet' id='tm-pg-material-icons-css' href='wp-content/plugins/tm-photo-gallery/media/css/material-icons.css' type='text/css' media='all' />
     <link rel='stylesheet' id='tm-pg-fontello-css' href='wp-content/plugins/tm-photo-gallery/media/css/frontend/fontello.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='tm-pg-lightgallery-css' href='wp-content/plugins/tm-photo-gallery/media/css/frontend/lightgallery.css' type='text/css' media='all' />
+     --><!-- <link rel='stylesheet' id='tm-pg-lightgallery-css' href='wp-content/plugins/tm-photo-gallery/media/css/frontend/lightgallery.css' type='text/css' media='all' />
     <link rel='stylesheet' id='tm-pg-style-frontend-css' href='wp-content/plugins/tm-photo-gallery/media/css/frontend/style-frontend.css' type='text/css' media='all' />
     <link rel='stylesheet' id='johnnygo-woocommerce-styles-css' href='wp-content/themes/johnnygo/assets/css/style-woocommerce8a54.css?ver=1.0.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='cherry-handler-css-css' href='wp-content/plugins/cherry-services-list/cherry-framework/modules/cherry-handler/assets/css/cherry-handler-styles.min8c67.css?ver=1.5.11' type='text/css' media='all' />
+     --><!-- <link rel='stylesheet' id='cherry-handler-css-css' href='wp-content/plugins/cherry-services-list/cherry-framework/modules/cherry-handler/assets/css/cherry-handler-styles.min8c67.css?ver=1.5.11' type='text/css' media='all' />
     <link rel='stylesheet' id='magnific-popup-css' href='wp-content/themes/johnnygo/assets/css/magnific-popup.minf488.css?ver=1.1.0' type='text/css' media='all' />
     <link rel='stylesheet' id='cherry-projects-styles-css' href='wp-content/plugins/cherry-projects/public/assets/css/styles58c4.css?ver=1.2.13' type='text/css' media='all' />
-    <link rel='stylesheet' id='cherry-google-fonts-johnnygo-css' href='http://fonts.googleapis.com/css?family=Archivo%3A400%2C500%7CRoboto%3A400%7CMontserrat%3A600&amp;subset=latin&amp;ver=4.9.8' type='text/css' media='all' />
-    <link rel='stylesheet' id='jet-elements-css' href='wp-content/plugins/jet-elements/assets/css/jet-elements71b1.css?ver=1.15.6' type='text/css' media='all' />
+     --><!-- <link rel='stylesheet' id='cherry-google-fonts-johnnygo-css' href='http://fonts.googleapis.com/css?family=Archivo%3A400%2C500%7CRoboto%3A400%7CMontserrat%3A600&amp;subset=latin&amp;ver=4.9.8' type='text/css' media='all' />
+     --><link rel='stylesheet' id='jet-elements-css' href='wp-content/plugins/jet-elements/assets/css/jet-elements71b1.css?ver=1.15.6' type='text/css' media='all' />
     <link rel='stylesheet' id='jet-elements-skin-css' href='wp-content/plugins/jet-elements/assets/css/jet-elements-skin71b1.css?ver=1.15.6' type='text/css' media='all' />
     <link rel='stylesheet' id='tm-wc-ajax-filters-widget-css' href='wp-content/plugins/tm-woocommerce-ajax-filters/assets/css/tm-wc-ajax-filters-widget5010.css?ver=4.9.8' type='text/css' media='all' />
     <link rel='stylesheet' id='tm-mega-menu-css' href='wp-content/plugins/tm-mega-menu/public/assets/css/style8daf.css?ver=1.1.4' type='text/css' media='all' />
@@ -5091,7 +4900,7 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
             color: #00D1FF;
         }
 
-        body .booked-calendar-shortcode-wrap .booked-calendar-wrap.small table.booked-calendar tbody tr.week td.active .date .number {
+        body .booked-calendar-shortcode-wrap .booked-calendar-wrap.small tbody tr.week td.active .date .number {
             color: #969ba2;
         }
 
@@ -5099,10 +4908,6 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
             color: #00D1FF !important;
         }
 
-        .booked-calendar-shortcode-wrap .booked-calendar tbody tr td.prev-date.today .date,
-        body #booked-profile-page .booked-tabs {
-            background-color: #00D1FF !important;
-        }
 
         .booked-calendar-shortcode-wrap .booked-calendar tbody tr td.prev-date.today .date .number {
             color: #959aa1 !important;
@@ -5113,54 +4918,6 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
         body .booked-modal .bm-window p.booked-title-bar {
             background-color: #ffffff;
         }
-
-        body #booked-profile-page .booked-profile-header {
-            background-color: #03ABFF !important;
-        }
-
-        body #booked-profile-page .booked-profile-header .booked-logout-button:hover,
-        body #booked-profile-page #profile-appointments .booked-form-notice,
-        body #booked-profile-page label {
-            color: #00D1FF;
-        }
-
-        body #booked-profile-page .booked-tabs li.active a,
-        body #booked-profile-page .booked-tabs li a:hover,
-        body #booked-profile-page .booked-tabs li.active a:hover {
-            background-color: #03ABFF !important;
-        }
-
-        body #booked-profile-page #profile-appointments .booked-no-margin {
-            color: #969ba2;
-        }
-
-        body #booked-profile-page #profile-edit #booked-page-form .form-submit input[type^="submit"],
-        body #booked-profile-page .login-submit input[type^="submit"],
-        body #booked-profile-page .wp-user-form input[type^="submit"] {
-            background-color: #03ABFF;
-            border-color: #03ABFF;
-        }
-
-        body #booked-profile-page #profile-edit #booked-page-form .form-submit input[type^="submit"]:hover,
-        body #booked-profile-page .login-submit input[type^="submit"]:hover,
-        body #booked-profile-page .wp-user-form input[type^="submit"]:hover {
-            background-color: #00D1FF !important;
-            border-color: #00D1FF;
-        }
-
-        body #booked-profile-page label {
-            font-weight: 400 !important;
-        }
-
-        body #booked-profile-page #profile-appointments .booked-form-notice {
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        body #booked-profile-page #profile-edit h4 {
-            font-weight: 500;
-        }
-
         body .booked-modal .bm-window a {
             color: #03ABFF;
         }
@@ -6185,9 +5942,9 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
             background-color: #03ABFF;
         }
 
-        svg [id^="preloader"] .stop-color {
+        /* svg [id^="preloader"] .stop-color {
             stop-color: #03ABFF;
-        }
+        } */
 
         .tm-pg_front_gallery .tm_pg_gallery-item_link::after,
         .tm-pg_front_gallery-tabs li.active a,
@@ -6719,11 +6476,6 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
             letter-spacing: 0em;
         }
 
-        .pricing-table__icon i {
-            background-color: #00D1FF;
-            color: #ffffff;
-        }
-
         .jet-elements .pricing-table__price-val,
         .jet-elements .pricing-table__price-prefix {
             font-style: normal;
@@ -6752,15 +6504,6 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
             background-color: #ffffff;
         }
 
-        .pricing-table .pricing-table__features,
-        .pricing-table .pricing-table__action {
-            background-color: #f0f4f7;
-        }
-
-        .pricing-table .pricing-table__subtitle {
-            color: #969ba2;
-        }
-
         .pricing-feature .item-bullet,
         .pricing-table__features .pricing-feature:not(.item-included) .pricing-feature__inner {
             color: #e3e9ee;
@@ -6769,13 +6512,6 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
         .pricing-feature.item-included .item-bullet {
             color: #03ABFF;
         }
-
-        .pricing-table:not(.featured-table) .pricing-table__price-val,
-        .pricing-table:not(.featured-table) .pricing-table__price-prefix,
-        .pricing-table:not(.featured-table) .pricing-table__price-suffix {
-            color: #03ABFF;
-        }
-
         .brands-list__item-name {
             font-style: normal;
             font-weight: 500;
@@ -6894,8 +6630,7 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
             }
         }
 
-        .elementor-counter .elementor-counter-title,
-        .circle-counter__number {
+        .elementor-counter .elementor-counter-title{
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
@@ -6937,20 +6672,6 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
                 color: #ffffff;
             }
         }
-
-        .jet-posts__inner-box .post__date-circle .post__date-link {
-            background-color: #f0f4f7;
-        }
-
-        .jet-posts__inner-box .post__date-circle .post__date-link:hover {
-            background-color: #03ABFF;
-        }
-
-        .jet-posts__inner-box .post__date-link:hover .post__date-day,
-        .jet-posts__inner-box .post__date-link:hover .post__date-month {
-            color: #ffffff;
-        }
-
         .jet-animated-box-icon-inner {
             background-color: #00D1FF;
             color: #ffffff;
@@ -7218,12 +6939,6 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
             background-color: #00D1FF;
         }
 
-        .pricing-table .pricing-table__price-val,
-        .pricing-table .pricing-table__price-prefix,
-        .pricing-table .pricing-table__price-suffix {
-            color: #03ABFF;
-        }
-
         .jet-elements .featured-table .pricing-table__heading,
         .jet-elements .featured-table .pricing-table__subtitle,
         .jet-elements .featured-table .pricing-table__price {
@@ -7312,7 +7027,7 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
     <link rel="apple-touch-icon-precomposed" href="wp-content/uploads/2018/03/cropped-Fav-248x248.png" />
     <meta name="msapplication-TileImage" content="https://ld-wp.template-help.com/wordpress_62555/4/default/wp-content/uploads/2018/03/cropped-Fav-286x286.png" />
     <!-- Smartsupp Live Chat script -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var _smartsupp = _smartsupp || {};
         _smartsupp.key = '78cd1e57f0bbf73955752c04de1ca71c523c0879';
         window.smartsupp || (function(d) {
@@ -7328,7 +7043,10 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
             c.src = 'https://www.smartsuppchat.com/loader.js?';
             s.parentNode.insertBefore(c, s);
         })(document);
-    </script>
+    </script> -->
+    <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7815747.js"></script>
+  <!-- End of HubSpot Embed Code -->
 </head>
 
 <body class="home page-template-default page page-id-278 woocommerce-no-js header-layout-fullwidth content-layout-fullwidth footer-layout-fullwidth blog-default position-fullwidth sidebar-1-3 header-style-2 footer-style-1  skin-default elementor-default elementor-page elementor-page-278">
@@ -7339,64 +7057,11 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
         </svg>
     </div>
     <div id="page" class="site">
-        <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+        <!-- <a class="skip-link screen-reader-text" href="#content">Skip to content</a> -->
         <header id="masthead" class="site-header style-2 header-btn-visibility" role="banner">
             <div class="mobile-panel invert">
                 <div class="mobile-panel__inner">
                     <button class="main-menu-toggle menu-toggle" aria-controls="main-menu" aria-expanded="false"><span class="menu-toggle-box"><span class="menu-toggle-inner"></span></span></button>
-                    <div class="header-components">
-                        <div class="search-form__toggle"></div>
-                        <div class="site-header-cart menu navbar-header-cart menu">
-                            <div class="site-header-cart__wrapper">
-                                <div class="cart-contents" title="View your shopping cart">
-                                    <i class="nc-icon-mini shopping_cart-modern"></i>
-                                    <span class="count">0</span>
-                                </div>
-                                <div class="shopping_cart-dropdown-wrap products_in_cart_0">
-                                    <div class="shopping_cart-header">
-                                        <h5>My Cart</h5>
-                                    </div>
-                                    <div class="widget woocommerce widget_shopping_cart">
-                                        <div class="widget_shopping_cart_content"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-search">
-                    <div id="cherry-search-wrapper-1" class="cherry-search-wrapper" data-args='{"change_standard_search":"true","search_button_icon":"","search_button_text":"Search","search_placeholder_text":"Enter keyword","search_source":["any"],"exclude_source_category":"projects","exclude_source_tags":"","exclude_source_post_format":"","limit_query":"5","results_order_by":"date","results_order":"asc","title_visible":"true","limit_content_word":"45","author_visible":"false","author_prefix":"by","thumbnail_visible":"false","enable_scroll":"true","result_area_height":"500","more_button":"View more","negative_search":"Sorry, but nothing matched your search terms.","server_error":"Sorry, but we cannot handle your search query now. Please, try again later!","id":1}'>
-                        <div class="cherry-search ">
-                            <form role="search" method="get" class="search-form cherry-search__form " action="https://ld-wp.template-help.com/wordpress_62555/4/default">
-                                <label class="cherry-search__label">
-                                    <span class="screen-reader-text">Search for:</span>
-                                    <input type="search" class="search-field cherry-search__field search-form__field" placeholder="Enter keyword&hellip;" value="" name="s" autocomplete="off" />
-                                    <input type="hidden" value='{"search_source":["any"],"results_order":"asc","results_order_by":"date","exclude_source_category":"projects"}' name="settings" />
-
-                                </label>
-                                <button type="submit" class="search-submit cherry-search__submit btn btn-primary">
-
-                                    <span class="cherry-search__submite_text">Search</span>
-                                </button>
-
-
-                            </form>
-                            <div class="cherry-search__results-list">
-                                <ul></ul>
-                                <div class="cherry-search__spinner_holder">
-                                    <div class="cherry-search__spinner">
-                                        <div class="rect1"></div>
-                                        <div class="rect2"></div>
-                                        <div class="rect3"></div>
-                                        <div class="rect4"></div>
-                                        <div class="rect5"></div>
-                                    </div>
-                                </div>
-                                <span class="cherry-search__message"></span>
-                            </div>
-
-                        </div>
-                    </div><span class="search-form__close"></span>
                 </div>
             </div>
 
@@ -7408,19 +7073,19 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
                                 <div class="contact-block__item contact-block__item--icon"><i class="contact-block__icon nc-icon-outline ui-1_email-84"></i>
                                     <div class="contact-block__value-wrap"><span class="contact-block__text"><a href="mailto:sales@nubexst.com">sales@nubexst.com</a></span></div>
                                 </div>
-                                <!-- <div class="contact-block__item contact-block__item--icon"><i class="contact-block__icon nc-icon-outline location_pin"></i>
+                                <div class="contact-block__item contact-block__item--icon"><i class="contact-block__icon nc-icon-outline location_pin"></i>
                                     <div class="contact-block__value-wrap"><span class="contact-block__text">Ubicación: cra 101 # 82- 57</span></div>
-                                </div> -->
+                                </div>
 
                             </div>
                         </div>
                         <div class="top-panel__wrap-items">
-                            <!--				<div class="top-panel__menus">
+                            				<div class="top-panel__menus">
                                                                                                                                                                                                 <div class="social-list social-list--header social-list--icon"><ul id="social-list-1" class="social-list__items inline-list"><li id="menu-item-218" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-218"><a href="https://www.facebook.com/zemezlab/"><span class="screen-reader-text">Facebook</span></a></li>
                                 <li id="menu-item-219" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-219"><a href="https://twitter.com/zemezlab"><span class="screen-reader-text">Twitter</span></a></li>
                                 <li id="menu-item-220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-220"><a href="https://www.youtube.com/channel/UCPW43un8VFXHe9LxKpR_2Hg"><span class="screen-reader-text">Youtube</span></a></li>
                                 <li id="menu-item-221" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-221"><a href="https://www.instagram.com/zemezlab"><span class="screen-reader-text">Instagram</span></a></li>
-                                </ul></div>				</div>-->
+                                </ul></div>				</div>
                         </div>
                     </div>
                 </div>
@@ -8017,7 +7682,7 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
 
                                                                                             <p><span class="wpcf7-form-control-wrap your-name"><input type="text" name="entry.218280414" id="entry.218280414" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Nombre:" /></span></p>
                                                                                             <p><span class="wpcf7-form-control-wrap your-phone"><input type="number" name="entry.1667175124" id="entry.1667175124" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Telefono:" /></span></p>
-                                                                                            <p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="entry.60388938" id="entry.60388938" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Correo electrónico" /></span></p>
+                                                                                            <p><span class="wpcf7-form-control-wrap your-email"><input type="email" name="entry.60388938" id="entry.60388938" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Correo electrónico:" /></span></p>
 
                                                                                             <p><span class="wpcf7-form-control-wrap your-message"><textarea name="entry.1393274856" id="entry.1393274856" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Comentario"></textarea></span></p>
                                                                                             <p><input type="button" style="background:#FF9000" onclick="Enviar()" value="Enviar" class="wpcf7-form-control wpcf7-submit btn-accent-2" /></p>
@@ -9194,61 +8859,7 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
                                                     </a>
                                             </li></script><link rel='stylesheet' id='cherry-search-css'  href='wp-content/plugins/cherry-search/assets/css/min/cherry-search.min6c9a.css?ver=1.1.4.1' type='text/css' media='all' />-->
     <script type='text/javascript'>
-        /* <![CDATA[ */
-        var wp_load_style = {
-            "0": "nucleo-outline.css",
-            "1": "cherry-socialize-public.css",
-            "2": "cherry-testi.css",
-            "3": "cherry-trending-posts.css",
-            "4": "tm-woocommerce-package.css",
-            "5": "jquery-rd-material-tabs.css",
-            "6": "jquery-swiper.css",
-            "7": "jquery-slider-pro.css",
-            "8": "booked-icons.css",
-            "9": "booked-tooltipster.css",
-            "10": "booked-tooltipster-theme.css",
-            "11": "booked-animations.css",
-            "12": "booked-styles.css",
-            "13": "booked-responsive.css",
-            "14": "cherry-services.css",
-            "15": "cherry-services-theme.css",
-            "16": "font-awesome.css",
-            "17": "contact-form-7.css",
-            "18": "rs-plugin-settings.css",
-            "19": "woocommerce-layout.css",
-            "20": "woocommerce-smallscreen.css",
-            "21": "woocommerce-general.css",
-            "22": "woocommerce-inline.css",
-            "23": "wsl-widget.css",
-            "24": "tm-woocompare.css",
-            "25": "tm-woowishlist.css",
-            "26": "tm-timeline-css.css",
-            "28": "tm-pg-material-icons.css",
-            "29": "tm-pg-fontello.css",
-            "30": "tm-pg-lightgallery.css",
-            "31": "tm-pg-style-frontend.css",
-            "33": "johnnygo-woocommerce-styles.css",
-            "34": "cherry-handler-css.css",
-            "35": "dashicons.css",
-            "36": "magnific-popup.css",
-            "37": "cherry-projects-styles.css",
-            "38": "cherry-google-fonts-johnnygo.css",
-            "39": "jet-elements.css",
-            "40": "jet-elements-skin.css",
-            "41": "tm-wc-ajax-filters-widget.css",
-            "42": "tm-mega-menu.css",
-            "43": "elementor-icons.css",
-            "44": "elementor-animations.css",
-            "45": "elementor-frontend.css",
-            "46": "tm-products-carousel-widget-styles.css",
-            "47": "cherry-popups-font-awesome.css",
-            "48": "cherry-popups-styles.css",
-            "49": "cherry-team.css",
-            "50": "cherry-team-grid.css",
-            "51": "johnnygo-theme-style.css",
-            "52": "johnnygo-skin-style.css",
-            "53": "google-fonts-1.css"
-        };
+        
         var wp_load_script = ["cherry-js-core.js", "jquery.html", "jquery-ui-datepicker.html", "booked-spin-js.html", "booked-spin-jquery.html", "booked-tooltipster.html", "booked-functions.html", "jquery-swiper.html", "jquery-slider-pro.html", "contact-form-7.html", "tp-tools.html", "revmin.html", "wc-add-to-cart.html", "woocommerce.html", "wc-cart-fragments.html", "tm-woocompare.html", "tm-woowishlist.html", "johnnygo-single-product-init.html", "countdown-script.html", "johnnygo-woo-theme-script.html", "cherry-handler-js.html", "magnific-popup.html", "cherry-projects-single-scripts.html", "cherry-post-formats.html", "tm-wc-ajax-product-filters.html", "tm-mega-menu.html", "tm-products-carousel-widget-init.html", "tm-categories-carousel-widget-init.html", "cherry-popups-scripts.html", "johnnygo-theme-script.js"];
         var cherry_ajax = "87b1248230";
         var ui_init_object = {
@@ -9312,7 +8923,6 @@ if (!empty($_GET) && $_GET['correo'] == 1) {
         };
         /* ]]> */
     </script>
-    <script type='text/javascript' src='wp-content/plugins/booked/assets/js/functions53cf.js?ver=2.1'></script>
     <script type='text/javascript' src='wp-content/plugins/cherry-testi/includes/swiper/js/swiper.jquery.min3d36.js?ver=3.3.1'></script>
     <script type='text/javascript' src='wp-content/themes/johnnygo/assets/js/min/jquery.slider-pro.min9030.js?ver=1.2.4'></script>
     <script type='text/javascript'>
